@@ -69,7 +69,7 @@ bt5=Button(window,text="5",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(5
 bt6=Button(window,text="6",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(6))
 bt7=Button(window,text="7",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(7))
 bt8=Button(window,text="8",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(8))
-bt9=Button(window,text="9",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(8))
+bt9=Button(window,text="9",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(9))
 bt10=Button(window,text="0",padx=40,pady=20,bg="#C0C0C0",command=lambda : click(0))
 btadd=Button(window,text="+",padx=40,pady=20,bg="#808080",command=add)
 bteq=Button(window,text="=",padx=86,pady=20,bg="#808080",command=equal)
