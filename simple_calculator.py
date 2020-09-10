@@ -1,4 +1,6 @@
 from tkinter import *
+from keyboard import *
+
 window=Tk()
 window.title("calculator")
 
@@ -15,7 +17,7 @@ def equal():
     return
 
 def click(n):
-    e.insert(END,n)
+    e.insert(END,str(n))
     return
 
 def mul():
@@ -84,6 +86,20 @@ btop=Button(window,text="(",padx=22,pady=20,bg="#808080",command=op)
 btcl=Button(window,text=")",padx=22,pady=20,bg="#808080",command=cl)
 btext=Button(window,text="EXIT",padx=13,pady=20,bg="yellow",fg="black",command=lambda : exit())
 
+on_press_key('1',lambda a: click(1))
+on_press_key('2',lambda a: click(2))
+on_press_key('3',lambda a: click(3))
+on_press_key('4',lambda a: click(4))
+on_press_key('5',lambda a: click(5))
+on_press_key('6',lambda a: click(6))
+on_press_key('7',lambda a: click(7))
+on_press_key('8',lambda a: click(8))
+on_press_key('9',lambda a: click(9))
+on_press_key('0',lambda a: click(0))
+on_press_key('+',lambda a: click('+'))
+on_press_key('/',lambda a: click('/'))
+on_press_key('-',lambda a: click('-'))
+on_press_key('x',lambda a: click('*'))
 #put bt on screen
 btext.grid(row=6,column=3)
 btmod.grid(row=1,column=3)
